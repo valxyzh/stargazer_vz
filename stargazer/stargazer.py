@@ -136,7 +136,7 @@ class Stargazer:
         self.show_adj_r2 = True
         self.show_pseudo_r2 = True
         self.show_residual_std_err = True
-        self.show_f_statistic = True
+        self.show_f_statistic = False
         self.show_dof = True
         self.show_notes = True
         self.notes_label = 'Note:'

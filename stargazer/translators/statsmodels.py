@@ -21,11 +21,11 @@ statsmodels_map = {'p_values' : 'pvalues',
                    'r2' : 'rsquared',
                    'r2_adj' : 'rsquared_adj',
                    'pseudo_r2' : 'prsquared',
-                   'f_p_value' : 'f_pvalue',
+                   # 'f_p_value' : 'f_pvalue',
                    'degree_freedom' : 'df_model',
                    'degree_freedom_resid' : 'df_resid',
                    'nobs' : 'nobs',
-                   'f_statistic' : 'fvalue',
+                   # 'f_statistic' : 'fvalue',
                    'T_Stat' : 'tvalues'
                    }
 
@@ -56,9 +56,9 @@ def extract_model_data(model):
 
     # Workaround for
     # https://github.com/statsmodels/statsmodels/issues/6778:
-    if 'f_statistic' in data:
-        data['f_statistic'] = (lambda x : x[0, 0] if getattr(x, 'ndim', 0)
-                               else x)(data['f_statistic'])
+    # if 'f_statistic' in data:
+    #     data['f_statistic'] = (lambda x : x[0, 0] if getattr(x, 'ndim', 0)
+    #                            else x)(data['f_statistic'])
 
     return data
 

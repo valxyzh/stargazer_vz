@@ -78,7 +78,7 @@ class Stargazer:
                    ('residual_std_err', 'resid_std_err',
                     'Residual Std. Error'),
 
-                   ('f_statistic', 'f_statistic', 'F Statistic')]
+                   # ('f_statistic', 'f_statistic', 'F Statistic')]
 
     def __init__(self, models):
         self.models = models
@@ -136,7 +136,7 @@ class Stargazer:
         self.show_adj_r2 = True
         self.show_pseudo_r2 = True
         self.show_residual_std_err = True
-        self.show_f_statistic = False
+        # self.show_f_statistic = False
         self.show_dof = True
         self.show_notes = True
         self.notes_label = 'Note:'
@@ -144,6 +144,7 @@ class Stargazer:
         self.custom_notes = []
         self.show_stars = True
         self.table_label = None
+    
 
     def extract_data(self):
         """

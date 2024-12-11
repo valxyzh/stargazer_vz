@@ -236,8 +236,8 @@ class Stargazer:
         self.T_statistic = show
 
     def show_F_Stat(self, show):
-    assert type(show) == bool, 'Please input True/False'
-    self.f_statistic = show
+        assert type(show) == bool, 'Please input True/False'
+        self.f_statistic = show
 
     def dependent_variable_name(self, name):
         assert type(name) == str, 'Please input a string to use as the depedent variable name'

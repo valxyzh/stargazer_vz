@@ -23,7 +23,7 @@ statsmodels_map = {'p_values' : 'pvalues',
                    'pseudo_r2' : 'prsquared',
                    # 'f_p_value' : 'f_pvalue',
                    'degree_freedom' : 'df_model',
-                   'degree_freedom_resid' : 'df_resid',
+                   # 'degree_freedom_resid' : 'df_resid',
                    'nobs' : 'nobs',
                    # 'f_statistic' : 'fvalue',
                    'T_Stat' : 'tvalues'
@@ -51,8 +51,8 @@ def extract_model_data(model):
 
     data['conf_int_low_values'] = model.conf_int()[0]
     data['conf_int_high_values'] = model.conf_int()[1]
-    data['resid_std_err'] = (sqrt(sum(model.resid**2) / model.df_resid)
-                             if hasattr(model, 'resid') else None)
+    # data['resid_std_err'] = (sqrt(sum(model.resid**2) / model.df_resid)
+    #                          if hasattr(model, 'resid') else None)
 
     # Workaround for
     # https://github.com/statsmodels/statsmodels/issues/6778:

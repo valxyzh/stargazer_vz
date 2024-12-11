@@ -79,6 +79,7 @@ class Stargazer:
                     'Residual Std. Error'),
 
                    # ('f_statistic', 'f_statistic', 'F Statistic')]
+                  ]
 
     def __init__(self, models):
         self.models = models

@@ -73,10 +73,10 @@ class Stargazer:
 
                    ('pseudo_r2', 'pseudo_r2',
                     Label({'LaTeX' : 'Pseudo $R^2$',
-                           'html' : 'Pseudo R<sup>2</sup>'})),
+                           'html' : 'Pseudo R<sup>2</sup>'}))
 
-                   ('residual_std_err', 'resid_std_err',
-                    'Residual Std. Error'),
+                   # ('residual_std_err', 'resid_std_err',
+                   #  'Residual Std. Error'),
 
                    # ('f_statistic', 'f_statistic', 'F Statistic')]
                   ]
